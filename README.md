@@ -24,7 +24,7 @@
 
 ## Getting Started
 1. Fork this repository, then clone your fork of this repository.
-2. Under root directory, create ```.env```file and add google map API key.
+2. Under root directory, create ```.env```file, then add google map API key and walkscore API key.
 3. Install dependencies for the client using the ```npm install``` command.
 4. Go to server folder and install dependencies for the server using ```npm install``` command.
 5. Under server directory, create ```.env``` file with your correct local information username and password, database, and port is 5432. You might have to create the database in psql before it can be accessed. For example, ```Create ROLE labber WITH LOGIN password 'labber';``` ```Create DATABASE final OWNER labber;```

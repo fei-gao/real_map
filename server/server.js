@@ -6,7 +6,7 @@ const app = require("express")(),
       knexConfig  = require("./knexfile"),
       knex       = require("knex")(knexConfig[ENV]),
       morgan      = require('morgan'),
-      pg          = require("pg")
+      pg          = require("pg"),
       knexLogger  = require('knex-logger');
 
 const PORT = process.env.PORT || 3009;

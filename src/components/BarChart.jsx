@@ -7,7 +7,11 @@ class BarChart extends Component{
            <div style={{width: '100%'}}>
            <Bar
                data={this.props.propertyValues}
-               options={{
+               width={100}
+               height={50}
+               options={
+                   {
+                   responsive: true,
                    title: {
                    display: true,
                    text: 'Property Value Over Years',
