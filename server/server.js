@@ -9,7 +9,7 @@ const app = require("express")(),
       pg          = require("pg"),
       knexLogger  = require('knex-logger');
 
-const PORT = process.env.PORT || 3009;
+const PORT = process.env.PORT || 3001;
 const queryHelper = require('./api/query-helper')
 
 // Load the logger first so all (static) HTTP requests are logged to STDOUT
