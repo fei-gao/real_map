@@ -213,11 +213,6 @@ addCrime(newLocation) {
     })
   }
 
-  showChart(){
-    document.getElementById('bar-chart').classList.toggle("hidden")
-    document.getElementsByClassName('bar-chart-btn')[0].classList.toggle('bar-chart-btn-active');
-  }
-
   render() {
     let renderedCompoenent;
     if (this.state.page === "choropleth") {

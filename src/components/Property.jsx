@@ -23,8 +23,8 @@ class Property extends Component {
           <div className="card-body">
               <div className="card-header">
                 <button className="fa fa-times fa-2x" onClick={() => {this.props.deleteProperty(this.props.location.address)}}></button>
-                <h6 className="text-left"><strong>Address:</strong> {this.props.location.address}</h6>
-                <h6 className="text-left"><strong>Community:</strong> {this.props.location.comm_name}</h6>
+                <h5 className="text-left"><strong>Address:</strong> {this.props.location.address}</h5>
+                <h5 className="text-left"><strong>Community:</strong> {this.props.location.comm_name}</h5>
               </div>
 
               <table className="table table-hover">
@@ -44,7 +44,7 @@ class Property extends Component {
                     <td>{lastYearPriceInfo/1000}</td>
                   </tr>
                   <tr>
-                    <th>Crime Rate <i className="fa fa-caret-down" id="crime-breakdown" aria-hidden="true"></i> <small>(case/person)</small></th>
+                    <th id="crime-breakdown">Crime Rate <i className="fa fa-caret-down" aria-hidden="true"></i> <small>(case/person)</small></th>
                     <td>{String((crimeTotal/Number(lastYearPopulationValue)).toFixed(2))}</td>
                   </tr>
                   <tr>
@@ -56,13 +56,13 @@ class Property extends Component {
                         options={{
                           title: {
                             display: true,
-                            fontSize: 25
+                            fontSize: 20
                           },
                           legend: {
-                            display: true,
+                            display: false,
                             position: 'right',
                             labels: {
-                              fontColor: "#fff"
+                              fontColor: "#fff",
                             }
                           },
                         }}
@@ -72,14 +72,14 @@ class Property extends Component {
                   <tr>
                     <th>Walkability Score</th>
                     <td>
-                      {this.props.location.walkScore.score || 'N/A'} 
+                      {this.props.location.walkScore.score || 'N/A'}
                       <small> {this.props.location.walkScore.description || 'N/A'}</small>
                     </td>
                   </tr>
                   <tr>
                     <th>Transit Score</th>
                     <td>
-                      {this.props.location.transitScore.score || 'N/A'} 
+                      {this.props.location.transitScore.score || 'N/A'}
                       <small> {this.props.location.transitScore.description || 'N/A'}</small>
                     </td>
                   </tr>
@@ -89,7 +89,7 @@ class Property extends Component {
                   </tr>
                 </tbody>
               </table>
-
+              <div className="neighbor-between"> </div>
           </div>
         </div>
       );
