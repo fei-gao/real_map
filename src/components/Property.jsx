@@ -9,7 +9,6 @@ class Property extends Component {
       })
     }
 
-
     render() {
       let crimeTotal = 0;
       for (var key in this.props.location.crime) {
@@ -20,7 +19,7 @@ class Property extends Component {
 
     return (
         <div className="card neighbor-info" key={this.props.location.address}>
-          <div className="card-body">
+          <div className="card-body" data-scroll={this.props.location.address}>
               <div className="card-header">
                 <button className="fa fa-times fa-2x" onClick={() => {this.props.deleteProperty(this.props.location.address)}}></button>
                 <h5 className="text-left"><strong>Address:</strong> {this.props.location.address}</h5>
@@ -52,14 +51,14 @@ class Property extends Component {
                     <Pie
                         data={this.props.location.pieData}
                         width={100}
-                        height={50}
+                        height={55}
                         options={{
                           title: {
                             display: true,
                             fontSize: 20
                           },
                           legend: {
-                            display: false,
+                            display: true,
                             position: 'right',
                             labels: {
                               fontColor: "#fff",
