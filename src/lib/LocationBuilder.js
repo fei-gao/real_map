@@ -34,8 +34,6 @@ const LocationBuilder = {
             newLocation.crime[crime.category] = Number(crime.count)
         }
     })
-
-
   },
 
   addWalkScoreToLocation: function (newLocation, data) {

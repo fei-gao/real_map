@@ -1,6 +1,8 @@
 #Real Map v0.25.0
 
 #Testing Address that have enough data
+345 7 AV NE
+444 HAWKHILL PL NW
 517 10 ST NE Calgary, AB, T2E 4M4
 938 Rundle Crescent Northeast, Calgary, AB, Canada
 204 18 St NW, Calgary, AB, Canada
@@ -21,6 +23,14 @@
 
 ## Styling focus
 - fix search animations to be smoother
+
+## Final Product
+![Screenshot of landing](https://github.com/fei-gao/real_map/blob/master/doc/landing.png)
+![Screenshot of table](https://github.com/fei-gao/real_map/blob/master/doc/table.png)
+![Screenshot of chart](https://github.com/fei-gao/real_map/blob/master/doc/chart.png)
+![Screenshot of crime_map](https://github.com/fei-gao/real_map/blob/master/doc/crime_map.png)
+![Screenshot of api](https://github.com/fei-gao/real_map/blob/master/doc/api.png)
+
 
 ## Getting Started
 1. Fork this repository, then clone your fork of this repository.
