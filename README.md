@@ -22,3 +22,8 @@ Property Evaluator is a real estate app that is valuable for potential property 
 8. Start express server: ```npm start```
 9. Start react server under root directory: ```npm start```
 10. This app will be served at http://localhost:3000/
+
+## Address for demo
+345 7 AV NE
+444 HAWKHILL PL NW
+3809 1 St SW, Calgary, AB, Canada
