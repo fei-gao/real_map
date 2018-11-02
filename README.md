@@ -1,4 +1,4 @@
-#Property Evaluator
+# Property Evaluator
 Property Evaluator is a real estate app that is valuable for potential property buyer who don't know enough about the property within City of Calgary. It resolves the information asymmetry on economic transactions and designed to give buyer enough information about addresses interested in real time including property values, community population, community crime rate, walkbility score and flood risk.
 
 ## Final Product
